@@ -1,6 +1,8 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
 }
 
 /* Navbar */
@@ -13,19 +15,21 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
@@ -41,23 +45,22 @@ body {
   text-align: center;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #000;
   margin-bottom: 20px;
 }
 
-.hero p {
+.hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
-  color: #333;
 }
 
 .btn {
   background-color: #2c3e50;
   color: white;
   padding: 12px 25px;
+  border: none;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
@@ -67,7 +70,7 @@ body {
   background-color: #1a252f;
 }
 
-/* About & Contact Sections */
+/* About and Contact Sections */
 .about, .contact {
   text-align: center;
   padding: 60px 20px;
