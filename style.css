@@ -47,9 +47,58 @@ nav a {
   text-decoration: none;
 }
 
-.about, .contact {
+.about, .contact, .coaches, .achievements, .testimonials {
   padding: 40px 20px;
   text-align: center;
+}
+
+.coaches {
+  background-color: #ffffff;
+}
+
+.coach-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.coach {
+  max-width: 250px;
+}
+
+.coach img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.coach h3 {
+  margin-top: 10px;
+}
+
+.coach p {
+  font-size: 0.9em;
+}
+
+.achievements {
+  background-color: #ffde59;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.testimonials blockquote {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
 }
 
 footer {
