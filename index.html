@@ -2,85 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Dev Chess Academy</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Dev Chess Academy</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#programs">Programs</a>
-    <a href="#mentors">Mentors</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h2>Master Chess with Us!</h2>
-  <p>Train with top mentors. Achieve your dreams.</p>
-  <a href="#contact">Join Now</a>
-</section>
-
-<section id="about" class="about">
-  <h2 class="section-title">About Us</h2>
-  <p>At Dev Chess Academy, we nurture young talents and train future grandmasters through structured, personalized coaching programs. Whether you’re a beginner or a tournament player, we have a program tailored just for you!</p>
-</section>
-
-<section id="programs">
-  <h2 class="section-title">Our Programs</h2>
-  <div class="programs">
-    <div class="program">
-      <img src="images/program1.png" alt="Program 1">
-      <h3>One-on-One Coaching</h3>
-      <p>Personalized sessions to accelerate your growth and understanding.</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Dev Chess Academy</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#mentors">Coaches</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="program">
-      <img src="images/program2.png" alt="Program 2">
-      <h3>Group Training</h3>
-      <p>Interactive classes to build competitive spirit and team learning.</p>
-    </div>
-    <div class="program">
-      <img src="images/program3.png" alt="Program 3">
-      <h3>Advanced Tournaments</h3>
-      <p>Prepare for competitive tournaments with strategic guidance.</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section id="mentors">
-  <h2 class="section-title">Our Mentors</h2>
-  <div class="mentors">
-    <div class="mentor">
-      <img src="images/mentor1.png" alt="Mentor 1">
-      <h4>Coach John</h4>
-      <p>FIDE Master</p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Unlock Your Chess Potential</h1>
+      <p>Join our expert-led training programs for all age groups and levels.</p>
+      <a href="#contact" class="btn">Join Now</a>
     </div>
-    <div class="mentor">
-      <img src="images/mentor2.png" alt="Mentor 2">
-      <h4>Coach Alice</h4>
-      <p>National Champion</p>
-    </div>
-    <div class="mentor">
-      <img src="images/mentor3.png" alt="Mentor 3">
-      <h4>Coach Steve</h4>
-      <p>Grandmaster</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="about">
-  <h2 class="section-title">Contact Us</h2>
-  <p>Email: info@devchessacademy.com | Phone: +1 234 567 8901</p>
-</section>
+  <!-- ABOUT -->
+  <section class="about container">
+    <h2>About Us</h2>
+    <p>At Dev Chess Academy, we nurture grandmasters of tomorrow. Our students have won national and international chess tournaments.</p>
+  </section>
 
-<footer>
-  &copy; 2025 Dev Chess Academy. All rights reserved.
-</footer>
+  <!-- LEVEL FORMAT -->
+  <section id="programs" class="level-format">
+    <div class="container">
+      <h2>LEVEL FORMAT</h2>
+      <p class="lead">One-on-one and Group format are devised to impart maximum knowledge of chess, provide flexibility to choose Frequency, Days and Time.</p>
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card purple">
+          <h3>One-on-one Class</h3>
+          <p class="subtitle">One-on-one private Interactive session</p>
+          <table>
+            <tr><th>Frequency</th><td>2 days/week</td></tr>
+            <tr><th>No of Sessions</th><td>16</td></tr>
+            <tr><th>Duration</th><td>2 Months</td></tr>
+            <tr><th>Age Group</th><td>4 to 15 Years</td></tr>
+            <tr><th>Batch Size</th><td>1</td></tr>
+            <tr><th>Format</th><td>Home session</td></tr>
+          </table>
+          <p class="info">Personalised and undivided attention of the coach</p>
+          <p class="features">Game Analysis | Live Playing | Tests | Assessment will be part of the session</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card blue">
+          <h3>Private Group Class</h3>
+          <p class="subtitle">A small, interactive group of kids</p>
+          <table>
+            <tr><th>Frequency</th><td>2 days/week</td></tr>
+            <tr><th>No of Sessions</th><td>24</td></tr>
+            <tr><th>Duration</th><td>3 Months</td></tr>
+            <tr><th>Age Group</th><td>5 to 15 Years</td></tr>
+            <tr><th>Batch Size</th><td>4</td></tr>
+            <tr><th>Format</th><td>Home session</td></tr>
+          </table>
+          <p class="info">Flexibility in deciding class duration and frequency</p>
+          <p class="features">Game Analysis | Live Playing | Tests | Assessment will be part of the session</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card yellow">
+          <h3>Centre Group Class</h3>
+          <p class="subtitle">Interactive group of kids</p>
+          <table>
+            <tr><th>Frequency</th><td>2 days/week</td></tr>
+            <tr><th>No of Sessions</th><td>24</td></tr>
+            <tr><th>Duration</th><td>3 Months</td></tr>
+            <tr><th>Age Group</th><td>5 to 15 Years</td></tr>
+            <tr><th>Batch Size</th><td>8</td></tr>
+            <tr><th>Format</th><td>Centre session</td></tr>
+          </table>
+          <p class="info">Offers flexibility in learning chess at centre</p>
+          <a href="#contact" class="btn-trial">Book a Trial Class</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTORS -->
+  <section id="mentors" class="mentors">
+    <div class="container">
+      <h2>Mentors</h2>
+      <div class="mentor-list">
+        <div class="mentor-card">
+          <img src="images/mentor1.jpg" alt="M. Vinoth">
+          <h3>M. Vinoth</h3>
+          <p>Founder, Ancient Chess Academy<br>Treasurer, Thanjavur District Chess Association</p>
+          <div class="icons">
+            <a href="#"><span>📞</span></a>
+            <a href="#"><span>✉️</span></a>
+          </div>
+        </div>
+        <div class="mentor-card">
+          <img src="images/mentor2.jpg" alt="T. Shyam Sundar">
+          <h3>T. Shyam Sundar</h3>
+          <p>Co-Founder, Ancient Chess Academy<br>Vice President, Thanjavur District Chess Association</p>
+          <div class="icons">
+            <a href="#"><span>📞</span></a>
+            <a href="#"><span>✉️</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> info@devchessacademy.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+  </section>
 
 </body>
 </html>
