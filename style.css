@@ -1,114 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dev Chess Academy</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<!-- Header -->
-<header>
-  <div class="container">
-    <h1>Dev Chess Academy</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#coaches">Coaches</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="container">
-    <h2>Unlock Your Chess Potential</h2>
-    <p>Expert-led training programs for all age groups and skill levels.</p>
-    <div class="hero-buttons">
-      <a href="#programs" class="btn">Explore Programs</a>
-      <a href="#contact" class="btn btn-secondary">Join Now</a>
-    </div>
-  </div>
-</section>
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
 
-<!-- About Section -->
-<section class="about" id="programs">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>At Dev Chess Academy, we shape the grandmasters of tomorrow. Our students have consistently triumphed in national and international tournaments, standing tall as true champions.</p>
-  </div>
-</section>
+/* Header */
+header {
+  background-color: #2e3d59;
+  color: white;
+  padding: 20px 0;
+}
 
-<!-- Coaches Section -->
-<section class="coaches" id="coaches">
-  <div class="container">
-    <h2>Meet Our Coaches</h2>
-    <div class="coach-cards">
-      <div class="coach-card">
-        <img src="coach1.jpg" alt="Coach Mohana Prabha">
-        <h3>Mohana Prabha</h3>
-        <p>International Master | 10+ years experience | Passionate mentor.</p>
-      </div>
-      <div class="coach-card">
-        <img src="coach2.jpg" alt="Coach Karthik">
-        <h3>Karthik Raja</h3>
-        <p>FIDE Trainer | Specialist in youth training and strategy building.</p>
-      </div>
-    </div>
-  </div>
-</section>
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 
-<!-- Achievements Section -->
-<section class="achievements" id="achievements">
-  <div class="container">
-    <h2>Our Achievements</h2>
-    <ul>
-      <li>🏆 100+ State and National Titles</li>
-      <li>🌍 10 students represented India internationally</li>
-      <li>🏅 Ranked Top 3 Chess Academy in India (2024)</li>
-    </ul>
-  </div>
-</section>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
 
-<!-- Testimonials Section -->
-<section class="testimonials">
-  <div class="container">
-    <h2>What Our Students Say</h2>
-    <div class="testimonial">
-      <p>"Thanks to Dev Chess Academy, I won my first national tournament! Amazing coaches and great support!"</p>
-      <h4>— Rahul S., Student</h4>
-    </div>
-    <div class="testimonial">
-      <p>"My son has grown from a beginner to a confident champion thanks to their structured training!"</p>
-      <h4>— Meera P., Parent</h4>
-    </div>
-  </div>
-</section>
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> info@devchessacademy.com</p>
-    <p><strong>Phone:</strong> +91 98765 43210</p>
-    <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-      <a href="#">Facebook</a>
-    </div>
-  </div>
-</section>
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Dev Chess Academy. All rights reserved.</p>
-</footer>
+/* Hero */
+.hero {
+  background-color: #ffde59;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-</body>
-</html>
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #2e3d59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background: #444;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Coaches */
+.coach-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.coach-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 250px;
+}
+
+.coach-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Achievements */
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.achievements li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+.contact p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #2e3d59;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
