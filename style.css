@@ -1,107 +1,86 @@
-/* Base Styles */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8fafc;
-  color: #333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-/* Header */
-.header {
-  background: #1e293b;
-  color: white;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
-}
-
-.nav-links li a {
-  color: white;
-  font-weight: 500;
-}
-
-/* Hero */
-.hero {
-  background: url('images/hero-chess.jpg') center/cover no-repeat;
-  color: white;
+/* Coach Section */
+.coach-section {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 4rem 2rem;
+  background: #f5f5fa;
+}
+.coach-card {
+  display: inline-block;
+  max-width: 320px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.coach-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+.coach-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #2c2c54;
+}
+.coach-card p {
+  color: #555;
 }
 
-.hero h2 {
-  font-size: 3rem;
+/* Level Format Section */
+.level-format-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+}
+.level-format-section .section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
-.hero p {
-  font-size: 1.2rem;
+.level-format-section .section-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #666;
 }
-
-/* Section Styles */
-.section {
-  padding: 4rem 0;
-}
-
-.light-bg {
-  background-color: #f1f5f9;
-}
-
-/* Coach Section */
-.coach-profile {
+.format-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 2rem;
 }
-
-.coach-profile img {
-  width: 280px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.format-card {
+  background: #f8f8f8;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.coach-info {
-  max-width: 600px;
-  text-align: center;
+.format-card h3 {
+  font-size: 1.3rem;
+  color: #333;
 }
-
-.coach-info h3 {
-  font-size: 1.5rem;
-  color: #1e293b;
-  margin-bottom: 0.5rem;
+.format-card .sub {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
-
-/* Footer */
-.footer {
-  background-color: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+.format-card ul {
+  list-style: none;
+  padding: 0;
+}
+.format-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.format-card.one {
+  background-color: #f4e4ff;
+}
+.format-card.two {
+  background-color: #d3efff;
+}
+.format-card.three {
+  background-color: #fff4b3;
 }
