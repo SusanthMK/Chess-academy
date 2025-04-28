@@ -10,77 +10,95 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="logo">Dev Chess Academy</div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#private-classes">Private Classes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">Dev Chess Academy</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#private-classes">Classes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="hero yellow-bg">
-    <h1>Welcome to Dev Chess Academy</h1>
-    <p>Where Champions Are Trained</p>
-    <div class="hero-buttons">
-      <button onclick="document.getElementById('private-classes').scrollIntoView({behavior: 'smooth'})">Enroll Now</button>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Building Chess Champions of Tomorrow</h1>
+      <p>Focused Private Coaching | 2 Classes per Week</p>
+      <a href="#private-classes" class="btn">Join Now</a>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Dev Chess Academy is dedicated to providing the highest quality chess coaching through personalized private sessions. Our mission is to build thinking minds and future champions through strategic training and mentorship.</p>
+  <!-- About Us -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Dev Chess Academy was founded to nurture young chess talent through personalized private sessions. Our mission is to unlock each student's potential with strategic coaching and mentorship.</p>
+    </div>
   </section>
 
-  <!-- Achievements Section -->
+  <!-- Achievements -->
   <section id="achievements" class="achievements">
-    <h2>Our Achievements</h2>
-    <div class="achievement-list">
-      <div class="achievement">🏆 District Level Champions 2024</div>
-      <div class="achievement">🥇 Top Ranks in State Tournaments</div>
-      <div class="achievement">🏅 10+ Students Ranked Nationally</div>
-      <div class="achievement">🎖️ FIDE Certified Coaches</div>
+    <div class="container">
+      <h2>Our Achievements</h2>
+      <div class="cards">
+        <div class="card">🏆 District Level Champions 2024</div>
+        <div class="card">🥇 State Tournament Top Performers</div>
+        <div class="card">🌍 National Level Qualifiers</div>
+        <div class="card">🎖️ FIDE Certified Coaches</div>
+      </div>
     </div>
   </section>
 
-  <!-- Private Classes Section -->
-  <section id="private-classes" class="class-details">
-    <h2>Private Class Sessions</h2>
-    <div class="class-card">
-      <ul>
-        <li><strong>Format:</strong> Individual Private Coaching</li>
-        <li><strong>Frequency:</strong> 2 Classes per Week</li>
-        <li><strong>Total Sessions:</strong> 8 Sessions per Month</li>
-        <li><strong>Age Group:</strong> 5 to 15 Years</li>
-        <li><strong>Mode:</strong> Home Visit / Online</li>
-      </ul>
+  <!-- Private Classes -->
+  <section id="private-classes" class="classes">
+    <div class="container">
+      <h2>Private Classes</h2>
+      <div class="class-info">
+        <ul>
+          <li><strong>Mode:</strong> Personalized Private Coaching</li>
+          <li><strong>Frequency:</strong> 2 Classes per Week</li>
+          <li><strong>Monthly Sessions:</strong> 8 Sessions</li>
+          <li><strong>Age Group:</strong> 5 to 15 Years</li>
+          <li><strong>Mode:</strong> Home Visit or Online</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Us -->
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <p>📍 Address: Dev Chess Academy, Chennai</p>
-      <p>📞 Phone: +91 98765 43210</p>
-      <p>💬 WhatsApp: +91 98765 43210</p>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>📍 Chennai, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>💬 WhatsApp Available</p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Dev Chess Academy. All Rights Reserved.</p>
+    <div class="container">
+      <p>© 2025 Dev Chess Academy. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+    💬
+  </a>
 
 </body>
 </html>
