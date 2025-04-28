@@ -3,92 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dev Chess Academy - Coaches</title>
+  <title>Dev Chess Academy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header class="header">
     <div class="logo">Dev Chess Academy</div>
     <nav class="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Coaches</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#private-classes">Private Classes</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero yellow-bg">
-    <h1>Unlock Your Chess Potential</h1>
-    <p>Join our expert-led training programs for all age groups and skill levels.</p>
+  <!-- Home Section -->
+  <section id="home" class="hero yellow-bg">
+    <h1>Welcome to Dev Chess Academy</h1>
+    <p>Where Future Grandmasters Begin</p>
     <div class="hero-buttons">
-      <button>Explore Programs</button>
-      <button>Join Now</button>
+      <button onclick="document.getElementById('private-classes').scrollIntoView({behavior: 'smooth'})">Join Now</button>
     </div>
   </section>
 
+  <!-- About Us -->
   <section class="about">
     <h2>About Us</h2>
-    <p>At Dev Chess Academy, we develop grandmasters of tomorrow. Our students have consistently excelled in national and international tournaments.</p>
+    <p>Dev Chess Academy is committed to training young minds into future champions. Led by certified coaches, our academy nurtures strategic thinking, focus, and sportsmanship in every student.</p>
   </section>
 
-  <section class="coaches">
-    <h2>Our Coaches</h2>
-    <div class="coach-card">
-      <img src="coach.jpg" alt="Coach Mohana Prabha">
-      <h3>Mohana Prabha</h3>
-      <p>Certified Chess Coach | Tournament Champion</p>
+  <!-- Achievements -->
+  <section id="achievements" class="achievements">
+    <h2>Our Achievements</h2>
+    <div class="achievement-list">
+      <div class="achievement">🏆 District Level Champion 2024</div>
+      <div class="achievement">🥇 State Level Winners 2023</div>
+      <div class="achievement">🏅 10+ Students Ranked Top 10 in Tournaments</div>
+      <div class="achievement">🎖️ Certified FIDE Trainers on Board</div>
     </div>
   </section>
 
-  <section class="level-format">
-    <h2>Level Format</h2>
-    <p>One-on-one and group formats to impart maximum knowledge of chess, providing flexibility to choose frequency, days, and time.</p>
-
-    <div class="level-cards">
-
-      <div class="level-card one-on-one">
-        <h3>One-on-One Class</h3>
-        <ul>
-          <li><strong>Frequency:</strong> 2 days/week</li>
-          <li><strong>No of Sessions:</strong> 16</li>
-          <li><strong>Duration:</strong> 2 Months</li>
-          <li><strong>Age Group:</strong> 4 to 15 Years</li>
-          <li><strong>Batch Size:</strong> 1</li>
-          <li><strong>Format:</strong> Home Session</li>
-        </ul>
-      </div>
-
-      <div class="level-card private-group">
-        <h3>Private Group Class</h3>
-        <ul>
-          <li><strong>Frequency:</strong> 2 days/week</li>
-          <li><strong>No of Sessions:</strong> 24</li>
-          <li><strong>Duration:</strong> 3 Months</li>
-          <li><strong>Age Group:</strong> 5 to 15 Years</li>
-          <li><strong>Batch Size:</strong> 4</li>
-          <li><strong>Format:</strong> Home Session</li>
-        </ul>
-      </div>
-
-      <div class="level-card center-group">
-        <h3>Centre Group Class</h3>
-        <ul>
-          <li><strong>Frequency:</strong> 2 days/week</li>
-          <li><strong>No of Sessions:</strong> 24</li>
-          <li><strong>Duration:</strong> 3 Months</li>
-          <li><strong>Age Group:</strong> 5 to 15 Years</li>
-          <li><strong>Batch Size:</strong> 8</li>
-          <li><strong>Format:</strong> Centre Session</li>
-        </ul>
-      </div>
-
+  <!-- Private Classes Section -->
+  <section id="private-classes" class="class-details">
+    <h2>Private Chess Coaching</h2>
+    <div class="class-card">
+      <ul>
+        <li><strong>Type:</strong> Private Class</li>
+        <li><strong>Frequency:</strong> 2 Classes / Week</li>
+        <li><strong>Sessions:</strong> 8 Sessions / Month</li>
+        <li><strong>Age Group:</strong> 5 to 15 Years</li>
+        <li><strong>Batch Size:</strong> 1 Student</li>
+        <li><strong>Format:</strong> Home or Online Session</li>
+      </ul>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>📍 Address: Dev Chess Academy, Chennai</p>
+      <p>📞 Phone: +91 98765 43210</p>
+      <p>💬 WhatsApp: +91 98765 43210</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Dev Chess Academy. All Rights Reserved.</p>
   </footer>
