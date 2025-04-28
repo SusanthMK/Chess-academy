@@ -1,77 +1,142 @@
-/* Reset some default styles */
+/* Reset defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Basic Body Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
   color: #333;
+  background: #f9f9f9;
   line-height: 1.6;
 }
 
-/* Header Section */
+/* Header */
 .header {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 1.2rem;
-}
-
-/* Coach Section */
-.coach-section {
   display: flex;
-  justify-content: center;
-  margin: 40px 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 20px 50px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.yellow-bg {
+  background-color: #ffe066;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.hero-buttons button:hover {
+  background-color: #1a2533;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Coaches Section */
+.coaches {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .coach-card {
   background: white;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-  width: 300px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .coach-card img {
-  width: 100%;
+  width: 250px;
   height: auto;
   border-radius: 12px;
-  margin-bottom: 15px;
 }
 
-.coach-card h2 {
-  color: #444;
-  margin-bottom: 8px;
+.coach-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
 }
 
 .coach-card p {
   color: #777;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  margin-top: 8px;
 }
 
 /* Level Format Section */
 .level-format {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #fff;
+  background: white;
+  padding: 60px 20px;
 }
 
 .level-format h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -80,7 +145,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Cards Layout */
 .level-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -94,14 +158,24 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  text-align: left;
 }
 
-.level-card:hover {
-  transform: translateY(-8px);
+.level-card h3 {
+  color: #222;
+  margin-bottom: 10px;
 }
 
-/* Specific Background Colors */
+.level-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.level-card li {
+  margin-bottom: 10px;
+}
+
+/* Specific Backgrounds */
 .one-on-one {
   background-color: #f9e6ff;
 }
@@ -114,33 +188,11 @@ body {
   background-color: #fff3c4;
 }
 
-/* Card Content */
-.level-card h3 {
-  font-size: 1.6rem;
-  margin-bottom: 5px;
-  color: #222;
-}
-
-.level-card p {
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.level-card ul {
-  list-style: none;
-  text-align: left;
-  padding-left: 0;
-}
-
-.level-card li {
-  margin: 8px 0;
-}
-
 /* Footer */
 .footer {
-  background-color: #222;
-  color: #aaa;
+  background-color: #2c3e50;
   text-align: center;
-  padding: 20px 10px;
-  margin-top: 50px;
+  padding: 20px;
+  color: #aaa;
+  margin-top: 60px;
 }
